@@ -5,7 +5,6 @@ import { BrowserRouter as Router, Link, Route, Routes } from "react-router-dom";
 
 
 // internal source
-import './App.css';
 import Menu from './components/Menu';
 import Home from './pages/Home'
 import Genres from './pages/Genres'
@@ -13,6 +12,9 @@ import Admin from './pages/Admin'
 import Movies from './pages/Movies'
 
 // css
+import './App.css';
+import DetailMovie from "./components/movie/DetailMovie";
+import ShowMovie from "./pages/Movies/show";
 
 function App() {
   return (
@@ -30,6 +32,7 @@ function App() {
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/movies" element={<Movies />} />
+              <Route exact path="/movies/:id" element={<ShowMovie />} />
               <Route path="/genres" element={<Genres />} />
               <Route path="/admin" element={<Admin />} />
             </Routes>

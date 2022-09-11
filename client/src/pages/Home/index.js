@@ -1,5 +1,5 @@
 import React from 'react'
-import MovieList from '../../components/MovieList'
+import MovieList from '../../components/movie/MovieList'
 
 const index = () => {
   return (

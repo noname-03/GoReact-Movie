@@ -1,10 +1,10 @@
 import React from 'react'
-import MovieList from '../../components/MovieList'
+import GenreList from '../../components/GenreList'
 
 const index = () => {
   return (
     <>
-      <MovieList />
+      <GenreList />
     </>
   )
 }
