@@ -1,4 +1,12 @@
+
+// thrid party
+
+// internal source
 import './App.css';
+import Menu from './components/Menu';
+import MovieList from './components/MovieList';
+
+// css
 
 function App() {
   return (
@@ -9,71 +17,10 @@ function App() {
       </div>
       <div className="row">
         <div className="col-2">
-          <div className="card">
-            <ul className="list-group list-group-flush">
-              <li className="list-group-item">An item</li>
-              <li className="list-group-item">A second item</li>
-              <li className="list-group-item">A third item</li>
-            </ul>
-          </div>
+          <Menu />
         </div>
         <div className="col-10">
-          <div className="row">
-            <div className="col-sm-4 mb-2">
-              <div className="card">
-                <div className="card-body">
-                  <h5 className="card-title">Special title treatment</h5>
-                  <p className="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                  <a href="#" className="btn btn-primary">Go somewhere</a>
-                </div>
-              </div>
-            </div>
-            <div className="col-sm-4 mb-2">
-              <div className="card">
-                <div className="card-body">
-                  <h5 className="card-title">Special title treatment</h5>
-                  <p className="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                  <a href="#" className="btn btn-primary">Go somewhere</a>
-                </div>
-              </div>
-            </div>
-            <div className="col-sm-4 mb-2">
-              <div className="card">
-                <div className="card-body">
-                  <h5 className="card-title">Special title treatment</h5>
-                  <p className="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                  <a href="#" className="btn btn-primary">Go somewhere</a>
-                </div>
-              </div>
-            </div>
-            <div className="col-sm-4 mb-2">
-              <div className="card">
-                <div className="card-body">
-                  <h5 className="card-title">Special title treatment</h5>
-                  <p className="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                  <a href="#" className="btn btn-primary">Go somewhere</a>
-                </div>
-              </div>
-            </div>
-            <div className="col-sm-4 mb-2">
-              <div className="card">
-                <div className="card-body">
-                  <h5 className="card-title">Special title treatment</h5>
-                  <p className="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                  <a href="#" className="btn btn-primary">Go somewhere</a>
-                </div>
-              </div>
-            </div>
-            <div className="col-sm-4 mb-2">
-              <div className="card">
-                <div className="card-body">
-                  <h5 className="card-title">Special title treatment</h5>
-                  <p className="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                  <a href="#" className="btn btn-primary">Go somewhere</a>
-                </div>
-              </div>
-            </div>
-          </div>
+          <MovieList />
         </div>
       </div>
     </div>
